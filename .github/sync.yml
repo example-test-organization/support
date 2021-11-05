@@ -1,0 +1,3 @@
+example-test-organization/test-repo-3:
+  - source: docs/
+    dest: docs/
