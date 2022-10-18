@@ -7,6 +7,7 @@ body:
     - type: dropdown
       id: cluster
       attributes:
+          multiple: false
           label: Target cluster
           description: |
               Please select a cluster.
@@ -73,6 +74,7 @@ body:
     - type: dropdown
       id: quota
       attributes:
+          multiple: false
           label: Namespace Quota
           description: |
               Please pick the resource tier you need for your project from
