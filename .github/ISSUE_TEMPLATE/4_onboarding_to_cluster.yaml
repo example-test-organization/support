@@ -1,7 +1,7 @@
 name: Onboard to a cluster
 description: Request access to a namespace in an Operate-First managed cluster.
 title: "NEW PROJECT: <name>"
-labels: [kind/onboarding, "script:script/onboarding.sh", "task-type:bash", "repo:apps"]
+labels: [kind/onboarding, "script:scripts/onboarding.sh", "task-type:bash", "repo:apps"]
 assignees: [first-operator]
 body:
     - type: dropdown
