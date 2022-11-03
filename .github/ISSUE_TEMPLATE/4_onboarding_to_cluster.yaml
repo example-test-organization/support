@@ -15,6 +15,17 @@ body:
               - Infra
               - Smaug
               - Balrog
+    - type: dropdown
+      id: environment
+      attributes:
+        multiple: false
+        label: Target environment
+        description: |
+          Please select an environment.
+        options:
+          - moc
+          - emea
+          - osc
     - type: input
       id: team-name
       attributes:
@@ -51,6 +62,15 @@ body:
           placeholder: my-team-namespace
       validations:
           required: true
+    - type: input
+      id: project-owner
+      attributes:
+        label: Project Owner
+        description: |
+          Designate one gh user as the project owner.
+        placeholder: gh-user
+      validations:
+        required: true
     - type: textarea
       id: project-description
       attributes:
@@ -60,6 +80,15 @@ body:
               particular resource requirements of which you're aware.
       validations:
           required: true
+    - type: input
+      id: project-docs-link
+      attributes:
+        label: Link to project documentation
+        description: |
+          Please provide a link to your project website, gh page, resource, or docs for reference.
+        placeholder: https://my-project.com
+      validations:
+        required: true
     - type: textarea
       id: users
       attributes:
@@ -68,7 +97,7 @@ body:
               Please list all users that will require access to the selected cluster.
 
               Your OpenShift username is the Github username you use to log in to the cluster.
-          placeholder: username, username
+          placeholder: username,username
       validations:
           required: true
     - type: dropdown
