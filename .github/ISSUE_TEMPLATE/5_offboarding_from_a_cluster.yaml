@@ -1,6 +1,6 @@
 name: Offboard from a cluster
 description: Request access to offboard a namespace and team from an Operate-First managed cluster.
-title: "NEW PROJECT: <name>"
+title: "Offboard project from a cluster."
 labels: [kind/offboarding, "script:scripts/offboarding.sh", "task-type:bash", "repo:apps"]
 assignees: [first-operator]
 body:
